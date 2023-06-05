@@ -16,5 +16,7 @@ struct Server {
   void (*launch)(struct Server *server);
 };
 
+struct Server server_constructor(int domain, int protocol, int service,
+    u_long interface, int port, int backlog, void (*launch)(struct Server *server));
 
 #endif /* Server_h */
