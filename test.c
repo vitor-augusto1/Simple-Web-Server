@@ -4,3 +4,8 @@
 #include <unistd.h>
 
 
+void launch(struct Server *server)
+{
+
+
+}
