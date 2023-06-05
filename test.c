@@ -6,6 +6,7 @@
 
 void launch(struct Server *server)
 {
+  char buffer[30000];
 
 
 }
