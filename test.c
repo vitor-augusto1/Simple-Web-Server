@@ -25,4 +25,8 @@ void launch(struct Server *server)
 }
 
 
+int main()
+{
+  struct Server server = server_constructor(AF_INET, 0, SOCK_STREAM, INADDR_ANY, 80, 10, launch);
+  server.launch(&server);
 }
