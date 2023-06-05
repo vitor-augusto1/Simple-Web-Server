@@ -18,6 +18,9 @@ void launch(struct Server *server)
     new_socket = accept(server->socket, (struct sockaddr *)&server->address,
         (socklen_t *)&address_length);
     read(new_socket, buffer, 30000);
+    printf("%s\n", buffer);
+    write(new_socket, hello, strlen(hello));
+    close(new_socket);
   }
 }
 
