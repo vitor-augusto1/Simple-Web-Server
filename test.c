@@ -11,6 +11,11 @@ void launch(struct Server *server)
                  GMT\nServer: Apache/2.2.14 (Win32)\nLast-Modified: Wed, 22 jul \
                  2009 19:15:56 GMT\nContent-length: 88\nContent-Type: text/html \
                  \nConnection: Closed\n\n<html><body><h1>Hello, World!</h1><body></html>";
+  int address_length = sizeof(server->address);
+  int new_socket;
+  while (1) {
+  }
+}
 
 
 }
